@@ -38,7 +38,7 @@ header  {
 
 header img {
     margin: 0 1rem;
-    width: 40%;
+    width: 12%;
     height: auto;
 }
 
@@ -213,12 +213,12 @@ footer p {
 
 .hero-content {
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px var(--accent2-color);
 }
 
 .hero-content h1 {
@@ -311,7 +311,7 @@ footer p {
     background-color: var(--primary-color);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px var(--primary-color)
 }
 
 .employee img {
@@ -341,7 +341,7 @@ footer p {
     text-align: center;
     background-color: var(--accent1-color);
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px var(--primary-color)
 }
 
 .contact-form h2 {
@@ -372,7 +372,7 @@ footer p {
 .contact-form select {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent2-color);
     border-radius: 5px;
 }
 
@@ -400,8 +400,8 @@ fieldset label {
 }
 
 .contact-form button {
-    background-color: #444;
-    color: white;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: 15px;
     font-size: 1rem;
     border: none;
@@ -410,5 +410,187 @@ fieldset label {
 }
 
 .contact-form button:hover {
-    background-color: #444;
+    background-color:var(--secondary-color);
+}
+
+.master {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.master img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.master-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background:var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cta-button {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    border-radius: 5px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 40px;
+    background:var(--primary-color)
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    border-radius: 5px;
+}
+
+
+        /* Table Styling */
+        .trip-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+            background: var(--primary-color);
+            box-shadow: 0 0 10px var(--accent2-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .trip-table th, 
+        .trip-table td {
+            border: 1px solid var(--accent2-color);
+            padding: 12px;
+        }
+
+        .trip-table th {
+            background-color:var(--accent2-color);
+            color:var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .trip-table tr:nth-child(even) {
+            background-color: var(--primary-color);
+        }
+
+        
+.cta-hero img {
+    position: relative;
+    width : 100%;
+}
+
+.cta-context {
+    position: absolute;
+    top: 250px;
+    left: 50%; padding: 10px 20px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.cta-hero {
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.trips {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trips article {
+    background: var(--accent2-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--accent2-color);
+    width: 30%;
+    text-align: center;
+}
+
+.trips img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+td{ 
+   color: var(--accent2-color);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
